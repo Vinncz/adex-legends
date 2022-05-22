@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Dashboard </title>
+</head>
+<body>
+
+    <div id="sidebar">
+        <div class="sidebar-logo-container">
+            <div class="sidebar-logo" onclick="location.replace('index.html')">
+                <img src="assets/Logo/ADEX_LEGENDS_YELLOW.svg" alt="">
+            </div>
+        </div>
+        
+        <p class="navigation-sidebar-item sidebar-active" onclick='window.location.replace("index.html")'> Home </p>
+        <p class="navigation-sidebar-item" onclick='window.location.replace("legends.html")'> Legends </p>
+        <p class="navigation-sidebar-item" onclick='window.location.replace("maps.html")'> Maps </p>
+        <p class="navigation-sidebar-item" onclick='window.location.replace("about-us.html")'> About Us </p>
+        <p class="navigation-sidebar-item" onclick='window.location.replace("pbe-signup.html")'> PBE Signup </p>
+    </div>
+    
+    
+    
+    <div class="navbar">
+        <svg id="toggle" width="50" height="50" viewBox="0 0 50 50" fill="yellow" xmlns="http://www.w3.org/2000/svg">
+            <rect x="12" y="16.0001" width="25" height="5" rx="1" fill="yellow"/>
+            <rect x="12" y="28" width="25" height="5" rx="1" fill="yellow"/>
+        </svg>
+        
+        <div class="nav-logo-and-links">
+            <div class="nav-logo" onclick="location.replace('index.html')">
+                <img src="Assets/Logo/ADEX_LEGENDS_YELLOW.svg" alt="">
+            </div>
+            
+            <div class="nav-links-container">
+                <div class="nav-link-active" onclick="location.replace('index.html')">
+                    Home
+                    <div class="nav-link-active-underline">  </div>
+                </div>
+                
+                <div class="nav-link" onclick="location.replace('legends.html')">
+                    Legends
+                    <div class="nav-link-active-underline">  </div>
+                </div>
+                
+                <div class="nav-link" onclick="location.replace('maps.html')">
+                    Maps
+                    <div class="nav-link-active-underline">  </div>
+                </div>
+                
+                <div class="nav-link" onclick="location.replace('about-us.html')">
+                    About Us
+                    <div class="nav-link-active-underline">  </div>
+                </div>
+                
+                <div class="nav-link" onclick="location.replace('pbe-signup.html')">
+                    PBE Signup
+                    <div class="nav-link-active-underline">  </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="nav-download-button">
+            <svg width="320" height="50" viewBox="0 0 320 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path id="nav-download-button-outter" d="M1 1H294.586L319 25.4142V49H12.9142L1 37.0858V1Z"/>
+                <path id="nav-download-button-inner" fill-rule="evenodd" clip-rule="evenodd" d="M293.5 3.99988H3.5V35.4999L14 45.9999H316L316 26.4999L293.5 3.99988ZM59.0537 19.1919C58.5257 18.6639 57.7217 18.3999 56.6417 18.3999H48.9017C48.6617 18.3999 48.5417 18.5199 48.5417 18.7599V30.6399C48.5417 30.8799 48.6617 30.9999 48.9017 30.9999H56.6417C57.7217 30.9999 58.5257 30.7359 59.0537 30.2079C59.5817 29.6799 59.8457 28.8759 59.8457 27.7959V21.5859C59.8457 20.5059 59.5817 19.7079 59.0537 19.1919ZM56.7677 21.0639C56.9597 21.2439 57.0557 21.5379 57.0557 21.9459V27.4359C57.0557 27.8439 56.9597 28.1439 56.7677 28.3359C56.5877 28.5159 56.2937 28.6059 55.8857 28.6059H51.3317V20.7759H55.8857C56.2937 20.7759 56.5877 20.8719 56.7677 21.0639ZM63.5172 30.2979C64.0452 30.8259 64.8492 31.0899 65.9292 31.0899H71.2392C72.3192 31.0899 73.1172 30.8259 73.6332 30.2979C74.1612 29.7699 74.4252 28.9659 74.4252 27.8859V21.4959C74.4252 20.4159 74.1612 19.6179 73.6332 19.1019C73.1172 18.5739 72.3192 18.3099 71.2392 18.3099H65.9292C64.8492 18.3099 64.0452 18.5739 63.5172 19.1019C62.9892 19.6179 62.7252 20.4159 62.7252 21.4959V27.8859C62.7252 28.9659 62.9892 29.7699 63.5172 30.2979ZM71.3472 28.4259C71.1672 28.6059 70.8732 28.6959 70.4652 28.6959H66.6852C66.2772 28.6959 65.9772 28.6059 65.7852 28.4259C65.6052 28.2339 65.5152 27.9339 65.5152 27.5259V21.8559C65.5152 21.4479 65.6052 21.1539 65.7852 20.9739C65.9772 20.7819 66.2772 20.6859 66.6852 20.6859H70.4652C70.8732 20.6859 71.1672 20.7819 71.3472 20.9739C71.5392 21.1539 71.6352 21.4479 71.6352 21.8559V27.5259C71.6352 27.9339 71.5392 28.2339 71.3472 28.4259ZM79.1694 30.9279C79.2414 30.9759 79.3374 30.9999 79.4574 30.9999H82.1754C82.3074 30.9999 82.4034 30.9759 82.4634 30.9279C82.5354 30.8799 82.5834 30.7899 82.6074 30.6579L84.6054 22.6659H84.7314L86.7294 30.6579C86.7534 30.7899 86.7954 30.8799 86.8554 30.9279C86.9274 30.9759 87.0294 30.9999 87.1614 30.9999H89.8794C89.9994 30.9999 90.0894 30.9759 90.1494 30.9279C90.2214 30.8799 90.2754 30.7899 90.3114 30.6579L93.2814 18.7959C93.2934 18.7599 93.2994 18.7119 93.2994 18.6519C93.2994 18.4839 93.1914 18.3999 92.9754 18.3999H90.8514C90.7194 18.3999 90.6174 18.4239 90.5454 18.4719C90.4854 18.5199 90.4434 18.6099 90.4194 18.7419L89.4654 22.9539L88.4394 27.5259H88.2954L86.1174 18.7239C86.0934 18.6039 86.0454 18.5199 85.9734 18.4719C85.9134 18.4239 85.8174 18.3999 85.6854 18.3999H83.6514C83.5194 18.3999 83.4174 18.4239 83.3454 18.4719C83.2854 18.5199 83.2434 18.6039 83.2194 18.7239L81.0414 27.5259H80.8974L78.9534 18.7059C78.9294 18.5859 78.8814 18.5079 78.8094 18.4719C78.7374 18.4239 78.6294 18.3999 78.4854 18.3999H76.3794C76.1514 18.3999 76.0374 18.4779 76.0374 18.6339C76.0374 18.6939 76.0434 18.7419 76.0554 18.7779L79.0254 30.6579C79.0614 30.7899 79.1094 30.8799 79.1694 30.9279ZM95.0007 30.6399C95.0007 30.8799 95.1207 30.9999 95.3607 30.9999H97.3947C97.6347 30.9999 97.7547 30.8799 97.7547 30.6399V22.4499H97.8807L102.633 30.6759C102.693 30.7959 102.759 30.8799 102.831 30.9279C102.915 30.9759 103.023 30.9999 103.155 30.9999H105.891C106.131 30.9999 106.251 30.8799 106.251 30.6399V18.7599C106.251 18.5199 106.131 18.3999 105.891 18.3999H103.875C103.635 18.3999 103.515 18.5199 103.515 18.7599V26.9319H103.371L98.6187 18.7059C98.5587 18.5979 98.4867 18.5199 98.4027 18.4719C98.3307 18.4239 98.2287 18.3999 98.0967 18.3999H95.3607C95.1207 18.3999 95.0007 18.5199 95.0007 18.7599V30.6399ZM109.309 30.6399C109.309 30.8799 109.429 30.9999 109.669 30.9999H118.183C118.423 30.9999 118.543 30.8799 118.543 30.6399V28.8399C118.543 28.5999 118.423 28.4799 118.183 28.4799H112.099V18.7599C112.099 18.5199 111.979 18.3999 111.739 18.3999H109.669C109.429 18.3999 109.309 18.5199 109.309 18.7599V30.6399ZM120.734 30.2979C121.262 30.8259 122.066 31.0899 123.146 31.0899H128.456C129.536 31.0899 130.334 30.8259 130.85 30.2979C131.378 29.7699 131.642 28.9659 131.642 27.8859V21.4959C131.642 20.4159 131.378 19.6179 130.85 19.1019C130.334 18.5739 129.536 18.3099 128.456 18.3099H123.146C122.066 18.3099 121.262 18.5739 120.734 19.1019C120.206 19.6179 119.942 20.4159 119.942 21.4959V27.8859C119.942 28.9659 120.206 29.7699 120.734 30.2979ZM128.564 28.4259C128.384 28.6059 128.09 28.6959 127.682 28.6959H123.902C123.494 28.6959 123.194 28.6059 123.002 28.4259C122.822 28.2339 122.732 27.9339 122.732 27.5259V21.8559C122.732 21.4479 122.822 21.1539 123.002 20.9739C123.194 20.7819 123.494 20.6859 123.902 20.6859H127.682C128.09 20.6859 128.384 20.7819 128.564 20.9739C128.756 21.1539 128.852 21.4479 128.852 21.8559V27.5259C128.852 27.9339 128.756 28.2339 128.564 28.4259ZM145.602 30.6939C145.602 30.6219 145.59 30.5619 145.566 30.5139L140.868 18.7239C140.82 18.6039 140.76 18.5199 140.688 18.4719C140.616 18.4239 140.514 18.3999 140.382 18.3999H138.114C137.874 18.3999 137.712 18.5079 137.628 18.7239L132.93 30.4779C132.894 30.5499 132.876 30.6219 132.876 30.6939C132.876 30.8979 133.014 30.9999 133.29 30.9999H135.216C135.336 30.9999 135.432 30.9759 135.504 30.9279C135.576 30.8799 135.636 30.7959 135.684 30.6759L136.566 28.4259H141.93L142.812 30.6759C142.86 30.7959 142.92 30.8799 142.992 30.9279C143.064 30.9759 143.166 30.9999 143.298 30.9999H145.188C145.464 30.9999 145.602 30.8979 145.602 30.6939ZM137.394 26.0859L139.194 21.4419H139.302L141.102 26.0859H137.394ZM157.438 19.1919C156.91 18.6639 156.106 18.3999 155.026 18.3999H147.286C147.046 18.3999 146.926 18.5199 146.926 18.7599V30.6399C146.926 30.8799 147.046 30.9999 147.286 30.9999H155.026C156.106 30.9999 156.91 30.7359 157.438 30.2079C157.966 29.6799 158.23 28.8759 158.23 27.7959V21.5859C158.23 20.5059 157.966 19.7079 157.438 19.1919ZM155.152 21.0639C155.344 21.2439 155.44 21.5379 155.44 21.9459V27.4359C155.44 27.8439 155.344 28.1439 155.152 28.3359C154.972 28.5159 154.678 28.6059 154.27 28.6059H149.716V20.7759H154.27C154.678 20.7759 154.972 20.8719 155.152 21.0639ZM165.243 30.6399C165.243 30.8799 165.363 30.9999 165.603 30.9999H174.117C174.357 30.9999 174.477 30.8799 174.477 30.6399V28.8399C174.477 28.5999 174.357 28.4799 174.117 28.4799H168.033V18.7599C168.033 18.5199 167.913 18.3999 167.673 18.3999H165.603C165.363 18.3999 165.243 18.5199 165.243 18.7599V30.6399ZM187.315 30.6939C187.315 30.6219 187.303 30.5619 187.279 30.5139L182.581 18.7239C182.533 18.6039 182.473 18.5199 182.401 18.4719C182.329 18.4239 182.227 18.3999 182.095 18.3999H179.827C179.587 18.3999 179.425 18.5079 179.341 18.7239L174.643 30.4779C174.607 30.5499 174.589 30.6219 174.589 30.6939C174.589 30.8979 174.727 30.9999 175.003 30.9999H176.929C177.049 30.9999 177.145 30.9759 177.217 30.9279C177.289 30.8799 177.349 30.7959 177.397 30.6759L178.279 28.4259H183.643L184.525 30.6759C184.573 30.7959 184.633 30.8799 184.705 30.9279C184.777 30.9759 184.879 30.9999 185.011 30.9999H186.901C187.177 30.9999 187.315 30.8979 187.315 30.6939ZM179.107 26.0859L180.907 21.4419H181.015L182.815 26.0859H179.107ZM189.431 30.2979C189.959 30.8259 190.763 31.0899 191.843 31.0899H196.523C197.603 31.0899 198.401 30.8259 198.917 30.2979C199.445 29.7699 199.709 28.9659 199.709 27.8859V18.7599C199.709 18.5199 199.589 18.3999 199.349 18.3999H197.279C197.039 18.3999 196.919 18.5199 196.919 18.7599V27.3999C196.919 27.8079 196.823 28.1079 196.631 28.2999C196.451 28.4799 196.157 28.5699 195.749 28.5699H192.599C192.191 28.5699 191.891 28.4799 191.699 28.2999C191.519 28.1079 191.429 27.8079 191.429 27.3999V18.7599C191.429 18.5199 191.309 18.3999 191.069 18.3999H188.999C188.759 18.3999 188.639 18.5199 188.639 18.7599V27.8859C188.639 28.9659 188.903 29.7699 189.431 30.2979ZM202.772 30.6399C202.772 30.8799 202.892 30.9999 203.132 30.9999H205.166C205.406 30.9999 205.526 30.8799 205.526 30.6399V22.4499H205.652L210.404 30.6759C210.464 30.7959 210.53 30.8799 210.602 30.9279C210.686 30.9759 210.794 30.9999 210.926 30.9999H213.662C213.902 30.9999 214.022 30.8799 214.022 30.6399V18.7599C214.022 18.5199 213.902 18.3999 213.662 18.3999H211.646C211.406 18.3999 211.286 18.5199 211.286 18.7599V26.9319H211.142L206.39 18.7059C206.33 18.5979 206.258 18.5199 206.174 18.4719C206.102 18.4239 206 18.3999 205.868 18.3999H203.132C202.892 18.3999 202.772 18.5199 202.772 18.7599V30.6399ZM217.783 30.2979C218.311 30.8259 219.115 31.0899 220.195 31.0899H225.055C226.135 31.0899 226.933 30.8259 227.449 30.2979C227.977 29.7699 228.241 28.9659 228.241 27.8859V26.8599C228.241 26.6199 228.121 26.4999 227.881 26.4999H225.775C225.535 26.4999 225.415 26.6199 225.415 26.8599V27.5259C225.415 27.9339 225.319 28.2339 225.127 28.4259C224.947 28.6059 224.653 28.6959 224.245 28.6959H220.951C220.543 28.6959 220.243 28.6059 220.051 28.4259C219.871 28.2339 219.781 27.9339 219.781 27.5259V21.8559C219.781 21.4479 219.871 21.1539 220.051 20.9739C220.243 20.7819 220.543 20.6859 220.951 20.6859H224.245C224.653 20.6859 224.947 20.7819 225.127 20.9739C225.319 21.1539 225.415 21.4479 225.415 21.8559V22.5399C225.415 22.7799 225.535 22.8999 225.775 22.8999H227.881C228.121 22.8999 228.241 22.7799 228.241 22.5399V21.4959C228.241 20.4159 227.977 19.6179 227.449 19.1019C226.933 18.5739 226.135 18.3099 225.055 18.3099H220.195C219.115 18.3099 218.311 18.5739 217.783 19.1019C217.255 19.6179 216.991 20.4159 216.991 21.4959V27.8859C216.991 28.9659 217.255 29.7699 217.783 30.2979ZM242.162 18.7599C242.162 18.5199 242.042 18.3999 241.802 18.3999H239.732C239.492 18.3999 239.372 18.5199 239.372 18.7599V23.4759H233.828V18.7599C233.828 18.5199 233.708 18.3999 233.468 18.3999H231.398C231.158 18.3999 231.038 18.5199 231.038 18.7599V30.6399C231.038 30.8799 231.158 30.9999 231.398 30.9999H233.468C233.708 30.9999 233.828 30.8799 233.828 30.6399V25.9959H239.372V30.6399C239.372 30.8799 239.492 30.9999 239.732 30.9999H241.802C242.042 30.9999 242.162 30.8799 242.162 30.6399V18.7599ZM254.853 29.0199C254.853 28.7799 254.733 28.6599 254.493 28.6599H248.013V25.7799H252.423C252.663 25.7799 252.783 25.6599 252.783 25.4199V23.8899C252.783 23.6499 252.663 23.5299 252.423 23.5299H248.013V20.7399H254.313C254.553 20.7399 254.673 20.6199 254.673 20.3799V18.7599C254.673 18.5199 254.553 18.3999 254.313 18.3999H245.583C245.343 18.3999 245.223 18.5199 245.223 18.7599V30.6399C245.223 30.8799 245.343 30.9999 245.583 30.9999H254.493C254.733 30.9999 254.853 30.8799 254.853 30.6399V29.0199ZM268.013 30.7119C268.013 30.6159 267.977 30.5259 267.905 30.4419L264.377 26.3019V26.2299H264.863C265.919 26.2299 266.681 25.9899 267.149 25.5099C267.629 25.0299 267.869 24.2619 267.869 23.2059V21.4059C267.869 20.3499 267.629 19.5879 267.149 19.1199C266.681 18.6399 265.919 18.3999 264.863 18.3999H257.519C257.279 18.3999 257.159 18.5199 257.159 18.7599V30.6399C257.159 30.8799 257.279 30.9999 257.519 30.9999H259.589C259.829 30.9999 259.949 30.8799 259.949 30.6399V26.2299H261.047L264.773 30.7299C264.857 30.8259 264.941 30.8979 265.025 30.9459C265.109 30.9819 265.217 30.9999 265.349 30.9999H267.689C267.797 30.9999 267.875 30.9759 267.923 30.9279C267.983 30.8679 268.013 30.7959 268.013 30.7119ZM259.949 24.0699V20.6859H263.999C264.395 20.6859 264.671 20.7699 264.827 20.9379C264.995 21.0939 265.079 21.3699 265.079 21.7659V22.9899C265.079 23.3859 264.995 23.6679 264.827 23.8359C264.671 23.9919 264.395 24.0699 263.999 24.0699H259.949Z"/>
+            </svg>
+        </div>
+    </div>
+    
+    <!-- section-1 -->
+    <div class="section1">
+        
+        <img src="Assets/Maps/Battle Royale/apex-media-maps-olympus-xl-l-m.jpg.adapt.1920w.jpg" alt="">
+        
+        <div class="rec">
+            <div class="wraper">
+                <img src="Assets/Logo/ADEX_LEGENDS_WHITE.svg" alt="">
+                <p>For PlayStation® 4, PlayStation 5, Xbox One, Xbox Series X|S, Nintendo Switch, and PC via Origin and Steam.</p>
+                <div class="btn-sec1-bor">
+                    <div class="btn-sec1">
+                        <span>PLAY FREE NOW</span>
+                    </div> 
+                </div>
+            </div>
+        </div>
+
+        <img class="char" src="Assets/Legends/MAD MAGGIE/apex-section-bg-legends-maggie-xl.jpg.adapt.1920w.png" alt="">
+    </div>
+
+    <!-- section-2  -->
+    <div class="section-2">
+
+        <div class="wrapper">
+          
+          <div class="upper">
+          
+            <div class="upper-left">
+                
+              <div class="upper-left-image">
+                <img src="Assets/News/Left.png" alt="">
+              </div>
+              
+              <div class="upper-left-description">
+                  <div class="upper-left-description-logo">
+                      <img src="Assets/Logo/ADEX_LEGENDS_WHITE.svg" alt="logo">
+                  </div>
+                  
+                  <div class="upper-left-description-wrapper">
+                      
+                    <div class="upper-left-description-header-teaser">
+                        <img src="Assets/Icons/Clock.svg">
+                        <p> 7 minutes read </p>
+                    </div>
+                    
+                    <div class="upper-left-description-header">
+                        <p> Adex Legends: Defiance Patch Notes </p>
+                    </div>
+                    
+                    <div class="upper-left-description-description">
+                        Check out the full patch notes of what to expect of this season,
+                        including a new legend, LTM, and even more when Defiance launches
+                        on February 8th!
+                    </div>
+                    
+                  </div>
+                  
+              </div>
+              
+            </div>
+            
+            <div class="upper-middle">
+            
+              <div class="upper-middle-upper">
+                
+                <div class="upper-middle-image">
+                    <img src="Assets/News/Middle-upper.png" alt="" style="margin-top: -350px;">
+                </div>
+                
+                <div class="upper-middle-description">
+                    <div class="upper-middle-description-logo">
+                        <img src="Assets/Logo/ADEX_LEGENDS_WHITE.svg" alt="logo">
+                    </div>
+                    
+                    <div class="upper-middle-description-wrapper">
+                        <div class="upper-middle-description-header-teaser">
+                            <img src="Assets/Icons/Clock.svg">
+                            <p> 2 minutes read </p>
+                        </div>
+                        
+                        <div class="upper-middle-description-header">
+                            <p> Adex Legends is now available
+                                on Xbox One and Xbox Series X|S </p>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+              </div>
+              
+                <div class="upper-middle-lower">
+                
+                    <div class="upper-middle-image">
+                        <img src="Assets/News/Middle-bottom.png" alt="">
+                    </div>
+                    
+                    <div class="upper-middle-description">
+                        <div class="upper-middle-description-logo">
+                            <img src="Assets/Logo/ADEX_LEGENDS_WHITE.svg" alt="logo">
+                        </div>
+                        
+                        <div class="upper-middle-description-wrapper">
+                            <div class="upper-middle-description-header-teaser">
+                                <img src="Assets/Icons/Clock.svg">
+                                <p> 2 minutes read </p>
+                            </div>
+                            
+                            <div class="upper-middle-description-header">
+                                <p> Adex Legends is now available
+                                    on Xbox One and Xbox Series X|S </p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            
+            <div class="upper-right">
+                <div class="upper-right-title">
+                    <p> UPCOMING TOURNAMENTS </p>
+                    <div class="upper-right-view-all" onclick="window.open('https://www.youtube.com/watch?v=dQw4w9WgXcQ')">
+                        VIEW ALL
+                    </div>
+                </div>
+                
+                <div class="upper-right-slider">
+                    <div class="upper-right-card"> 
+                        <div class="upper-right-card-logo">
+                            <img src="Assets/Logo/ADEX_LEGENDS_WHITE.svg" alt="">
+                        </div>
+                        
+                        <div class="upper-right-card-content">
+                            <div class="upper-right-card-content-title">
+                                Pro League Regular Season Split 2
+                            </div>
+                            
+                            <div class="upper-right-card-content-details">
+                                The five-week online Regular Season for Split 2 of the ALGS Pro League
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="upper-right-card"> 
+                        <div class="upper-right-card-logo-active">
+                            <img src="Assets/Logo/ADEX_LEGENDS_BLACK.svg" alt="">
+                        </div>
+                        
+                        <div class="upper-right-card-content">
+                            <div class="upper-right-card-content-title">
+                                Challenger Circuit - Split 2
+                            </div>
+                            
+                            <div class="upper-right-card-content-details">
+                                The Split 2 Challenger Circuit features four open-registration online weekend tournaments
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="upper-right-card"> 
+                        <div class="upper-right-card-logo">
+                            <img src="Assets/Logo/ADEX_LEGENDS_WHITE.svg" alt="">
+                        </div>
+                        
+                        <div class="upper-right-card-content">
+                            <div class="upper-right-card-content-title">
+                                Split 2 Playoffs
+                            </div>
+                            
+                            <div class="upper-right-card-content-details">
+                                Global Playoffs for Split 2 of the ALGS Pro League
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="upper-right-card"> 
+                        <div class="upper-right-card-logo">
+                            <img src="Assets/Logo/ADEX_LEGENDS_WHITE.svg" alt="">
+                        </div>
+                        
+                        <div class="upper-right-card-content">
+                            <div class="upper-right-card-content-title">
+                                ALGS Championship
+                            </div>
+                            
+                            <div class="upper-right-card-content-details">
+                                Global Championships for Year 2 of the Adex Legends Global Series
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="upper-right-card"> 
+                        <div class="upper-right-card-logo">
+                            <img src="Assets/Logo/ADEX_LEGENDS_WHITE.svg" alt="">
+                        </div>
+                        
+                        <div class="upper-right-card-content">
+                            <div class="upper-right-card-content-title">
+                                SUMMER CIRCUIT 2
+                            </div>
+                            
+                            <div class="upper-right-card-content-details">
+                                The most popular summer competition to date!
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="upper-right-card"> 
+                        <div class="upper-right-card-logo">
+                            <img src="Assets/Logo/ADEX_LEGENDS_WHITE.svg" alt="">
+                        </div>
+                        
+                        <div class="upper-right-card-content">
+                            <div class="upper-right-card-content-title">
+                                Pro League Regular Season Split 2
+                            </div>
+                            
+                            <div class="upper-right-card-content-details">
+                                The five-week online Regular Season for Split 2 of the ALGS Pro League
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+            </div>
+            
+        </div>
+          
+          <div class="lower">
+            <div class="section2-lower-card" onclick="window.open('https://www.youtube.com/watch?v=dQw4w9WgXcQ')"> 
+                <div class="section2-lower-card-image">
+                    
+                    <img src="Assets/Banner/apex-concept-art-wallpaper-bangalore.png" alt="">
+                </div>
+                
+                <div class="section2-lower-card-description">
+                  <div class="section2-lower-card-description-header-teaser">
+                    <div class="section2-lower-card-description-header-teaser-adex">
+                      ADEX LEGENDS
+                    </div>
+                    
+                    <div class="section2-lower-card-description-header-teaser-date">
+                      MAY 9, 2022
+                    </div>
+                  </div>
+                  
+                  <div class="section2-lower-card-description-header">
+                    Saviors Patch Notes
+                  </div>    
+                  
+                  <div class="section2-lower-card-description-news">
+                    Leap into the line of fire with a new Legend, 
+                    Newcastle, traverse a monstrous map update, 
+                    learn about Ranked Reloaded, and more!
+                  </div>
+                  
+                </div>
+                
+                <div class="section2-lower-card-accent">  </div>
+            </div>
+          
+            <div class="section2-lower-card" onclick="window.open('https://www.youtube.com/watch?v=dQw4w9WgXcQ')"> 
+                <div class="section2-lower-card-image">
+                    <img src="Assets/Banner/apex-concept-art-wallpaper-bloodhound.png" alt="">
+                </div>
+                
+                <div class="section2-lower-card-description">
+                    <div class="section2-lower-card-description-header-teaser">
+                        <div class="section2-lower-card-description-header-teaser-adex">
+                            ADEX LEGENDS
+                        </div>
+                        
+                        <div class="section2-lower-card-description-header-teaser-date">
+                            MAY 9, 2022
+                        </div>
+                    </div>
+                    
+                    <div class="section2-lower-card-description-header">
+                        Saviors Patch Notes
+                    </div>    
+                    
+                    <div class="section2-lower-card-description-news">
+                        Leap into the line of fire with a new Legend, 
+                        Newcastle, traverse a monstrous map update, 
+                        learn about Ranked Reloaded, and more!
+                    </div>
+                
+                </div>
+                
+                <div class="section2-lower-card-accent">  </div>
+            </div>
+      
+            <div class="section2-lower-card" onclick="window.open('https://www.youtube.com/watch?v=dQw4w9WgXcQ')"> 
+                <div class="section2-lower-card-image">
+                    <img src="Assets/Banner/apex-concept-art-wallpaper-gibraltar.png" alt="">
+                </div>
+                    
+                <div class="section2-lower-card-description">
+                    <div class="section2-lower-card-description-header-teaser">
+                        <div class="section2-lower-card-description-header-teaser-adex">
+                            ADEX LEGENDS
+                        </div>
+                        
+                        <div class="section2-lower-card-description-header-teaser-date">
+                            MAY 9, 2022
+                        </div>
+                    </div>
+                    
+                    <div class="section2-lower-card-description-header">
+                        Saviors Patch Notes
+                    </div>    
+                    
+                    <div class="section2-lower-card-description-news">
+                        Leap into the line of fire with a new Legend, 
+                        Newcastle, traverse a monstrous map update, 
+                        learn about Ranked Reloaded, and more!
+                    </div>
+                    
+                    </div>
+                
+                <div class="section2-lower-card-accent">  </div>
+            </div>
+  
+            <div class="section2-lower-card" onclick="window.open('https://www.youtube.com/watch?v=dQw4w9WgXcQ')"> 
+                <div class="section2-lower-card-image">
+                    <img src="Assets/Banner/apex-concept-art-wallpaper-revenant.jpg" alt="">
+                </div>
+                
+                <div class="section2-lower-card-description">
+                    <div class="section2-lower-card-description-header-teaser">
+                        <div class="section2-lower-card-description-header-teaser-adex">
+                            ADEX LEGENDS
+                        </div>
+                        
+                        <div class="section2-lower-card-description-header-teaser-date">
+                            MAY 9, 2022
+                        </div>
+                    </div>
+                
+                    <div class="section2-lower-card-description-header">
+                        Saviors Patch Notes
+                    </div>    
+                    
+                    <div class="section2-lower-card-description-news">
+                        Leap into the line of fire with a new Legend, 
+                        Newcastle, traverse a monstrous map update, 
+                        learn about Ranked Reloaded, and more!
+                    </div>
+                
+                </div>
+                
+                <div class="section2-lower-card-accent">  </div>
+            </div>
+            
+            <div class="section2-lower-card" onclick="window.open('https://www.youtube.com/watch?v=dQw4w9WgXcQ')"> 
+                <div class="section2-lower-card-image">
+                  <img src="Assets/Banner/apex-concept-art-wallpaper-mirage.png" alt="">
+                </div>
+                
+                <div class="section2-lower-card-description">
+                  <div class="section2-lower-card-description-header-teaser">
+                    <div class="section2-lower-card-description-header-teaser-adex">
+                      ADEX LEGENDS
+                    </div>
+                    
+                    <div class="section2-lower-card-description-header-teaser-date">
+                      MAY 9, 2022
+                    </div>
+                  </div>
+                  
+                  <div class="section2-lower-card-description-header">
+                    Saviors Patch Notes
+                  </div>    
+                  
+                  <div class="section2-lower-card-description-news">
+                    Leap into the line of fire with a new Legend, 
+                    Newcastle, traverse a monstrous map update, 
+                    learn about Ranked Reloaded, and more!
+                  </div>
+                  
+                </div>
+                
+                <div class="section2-lower-card-accent">  </div>
+            </div>
+            
+            <div class="section2-lower-card" onclick="window.open('https://www.youtube.com/watch?v=dQw4w9WgXcQ')"> 
+                <div class="section2-lower-card-image">
+                  <img src="Assets/Banner/apex-concept-art-wallpaper-crypto.jpg" alt="">
+                </div>
+                
+                <div class="section2-lower-card-description">
+                  <div class="section2-lower-card-description-header-teaser">
+                    <div class="section2-lower-card-description-header-teaser-adex">
+                      ADEX LEGENDS
+                    </div>
+                    
+                    <div class="section2-lower-card-description-header-teaser-date">
+                      MAY 9, 2022
+                    </div>
+                  </div>
+                  
+                  <div class="section2-lower-card-description-header">
+                    Saviors Patch Notes
+                  </div>    
+                  
+                  <div class="section2-lower-card-description-news">
+                    Leap into the line of fire with a new Legend, 
+                    Newcastle, traverse a monstrous map update, 
+                    learn about Ranked Reloaded, and more!
+                  </div>
+                  
+                </div>
+                
+                <div class="section2-lower-card-accent">  </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!-- Section 5 -->
+<div class="section-5">
+
+    <div class="section-5-bg">
+        <p style="font-size: 144px; font-family: 'TT Lakes Neue'; font-weight: 600; letter-spacing: -5px; margin-bottom: -100px; text-shadow: none; color: white; opacity: 25%; margin-left: 150px;"> Meet the </p>
+        LEGENDS
+    </div>
+    
+    <div class="swiper mySwiper" style="overflow: hidden;">
+        <div class="legends-card swiper-wrapper">
+            <div class="legends-card-container swiper-slide">
+                <img src="Assets/Legends/Cards/card-intro-1.png" alt="">
+                
+                <div class="legends-skill">
+                    <div class="legends-skill-bg"> </div>
+                    <img src="Assets/Legends/Cards/card-arrow.png" alt="arrow">
+                    <img src="Assets/Legends/Cards/card-arrow.png" alt="arrow">
+                    <img src="Assets/Legends/Cards/card-arrow.png" alt="arrow">
+                </div>
+            </div>
+            
+            <div class="legends-card-container swiper-slide">
+                <img src="Assets/Legends/Cards/card-0.png" alt="">
+                
+                <div class="legends-skill">
+                    <div class="legends-skill-bg"> </div>
+                    <img src="Assets/Legends/CRYPTO/apex-grid-tile-legends-abilities-passive-crypto.png.adapt.crop16x9.652w.png" alt="skill-1">
+                    <img src="Assets/Legends/CRYPTO/apex-grid-tile-legends-abilities-tactical-crypto.png.adapt.crop16x9.652w.png" alt="skill-2">
+                    <img src="Assets/Legends/CRYPTO/apex-grid-tile-legends-abilities-ultimate-crypto.png.adapt.crop16x9.652w.png" alt="skill-3">
+                </div>
+            </div>
+            
+            <div class="legends-card-container swiper-slide">
+                <img src="Assets/Legends/Cards/card-1.png" alt="">
+                
+                <div class="legends-skill">
+                    <div class="legends-skill-bg"> </div>
+                    <img src="Assets/Legends/HORIZON/apex-grid-tile-legends-abilities-passive-horizon.png.adapt.crop16x9.652w.png" alt="skill-1">
+                    <img src="Assets/Legends/HORIZON/apex-grid-tile-legends-abilities-tactical-horizon.png.adapt.crop16x9.652w.png" alt="skill-2">
+                    <img src="Assets/Legends/HORIZON/apex-grid-tile-legends-abilities-ultimate-horizon.png.adapt.crop16x9.652w.png" alt="skill-3">
+                </div>
+            </div>
+            
+            <div class="legends-card-container swiper-slide">
+                <img src="Assets/Legends/Cards/card-2.png" alt="">
+                
+                <div class="legends-skill">
+                    <div class="legends-skill-bg"> </div>
+                    <img src="Assets/Legends/VALKYRIE/apex-grid-tile-legends-abilities-passive-valkyrie.png.adapt.crop16x9.652w.png" alt="skill-1">
+                    <img src="Assets/Legends/VALKYRIE/apex-grid-tile-legends-abilities-tactical-valkyrie.png.adapt.crop16x9.652w.png" alt="skill-2">
+                    <img src="Assets/Legends/VALKYRIE/apex-grid-tile-legends-abilities-ultimate-valkyrie.png.adapt.crop16x9.652w.png" alt="skill-3">
+                </div>
+            </div>
+            
+            <div class="legends-card-container swiper-slide">
+                <img src="Assets/Legends/Cards/card-3.png" alt="">
+                
+                <div class="legends-skill">
+                    <div class="legends-skill-bg"> </div>
+                    <img src="Assets/Legends/ASH/apex-grid-tile-legends-abilities-passive-ash.png.adapt.crop16x9.652w.png" alt="skill-1">
+                    <img src="Assets/Legends/ASH/apex-grid-tile-legends-abilities-tactical-ash.png.adapt.crop16x9.652w.png" alt="skill-2">
+                    <img src="Assets/Legends/ASH/apex-grid-tile-legends-abilities-ultimate-ash.png.adapt.crop16x9.652w.png" alt="skill-3">
+                </div>
+            </div>
+            
+            <div class="legends-card-container swiper-slide">
+                <img src="Assets/Legends/Cards/card-4.png" alt="">
+                
+                <div class="legends-skill">
+                    <div class="legends-skill-bg"> </div>
+                    <img src="Assets/Legends/BLOODHOUND/apex-grid-tile-legends-abilities-passive-bloodhound.png.adapt.crop16x9.652w.png" alt="skill-1">
+                    <img src="Assets/Legends/BLOODHOUND/apex-grid-tile-legends-abilities-tactical-bloodhound.png.adapt.crop16x9.652w.png" alt="skill-2">
+                    <img src="Assets/Legends/BLOODHOUND/apex-grid-tile-legends-abilities-ultimate-bloodhound.png.adapt.crop16x9.652w.png" alt="skill-3">
+                </div>
+            </div>
+            
+            <div class="legends-card-container swiper-slide">
+                <img src="Assets/Legends/Cards/card-5.png" alt="">
+                
+                <div class="legends-skill">
+                    <div class="legends-skill-bg"> </div>
+                    <img src="Assets/Legends/CAUSTIC/apex-grid-tile-legends-abilities-passive-caustic.png.adapt.crop16x9.652w.png" alt="skill-1">
+                    <img src="Assets/Legends/CAUSTIC/apex-grid-tile-legends-abilities-tactical-caustic.png.adapt.crop16x9.652w.png" alt="skill-2">
+                    <img src="Assets/Legends/CAUSTIC/apex-grid-tile-legends-abilities-ultimate-caustic.png.adapt.crop16x9.652w.png" alt="skill-3">
+                </div>
+            </div>
+            
+            <div class="legends-card-container swiper-slide">
+                <img src="Assets/Legends/Cards/card-6.png" alt="">
+                
+                <div class="legends-skill">
+                    <div class="legends-skill-bg"> </div>
+                    <img src="Assets/Legends/FUSE/apex-grid-tile-legends-abilities-passive-fuse.png.adapt.crop16x9.652w.png" alt="skill-1">
+                    <img src="Assets/Legends/FUSE/apex-grid-tile-legends-abilities-tactical-fuse.png.adapt.crop16x9.652w.png" alt="skill-2">
+                    <img src="Assets/Legends/FUSE/apex-grid-tile-legends-abilities-ultimate-fuse.png.adapt.crop16x9.652w.png" alt="skill-3">
+                </div>
+            </div>
+            
+            <div id="legends-card-container-cta" class="legends-card-container swiper-slide" onclick="location.replace('legends.html')" style="cursor: pointer;">
+                <img src="Assets/Legends/Cards/card-click-more-1.png" alt="">
+                
+                <div class="legends-skill">
+                    <div class="legends-skill-bg"> </div>
+                    <img src="Assets/Legends/Cards/card-arrow.png">
+                    <img src="Assets/Legends/Cards/card-arrow.png">
+                    <img src="Assets/Legends/Cards/card-arrow.png">
+                </div>
+            </div>
+            
+        </div>
+        <div class="swiper-pagination"></div>
+        
+    </div>
+
+</div>
+
+<div class="section-6">
+    
+    <div class="carousel">
+        <div class="carousel-inner">
+            
+            <div class="carousel-item" onclick="location.replace('maps.html#battle-royale')">
+                <img src="Assets/Maps/Banner/New-maps-battle-royale.png" alt="">
+            </div>
+            
+            <div  class="carousel-item" onclick="location.replace('maps.html#arenas')">
+                <img src="Assets/Maps/Banner/New-maps-arenas.png" onclick="window.open('maps.html#arena')" alt="">
+            </div>
+            
+        </div>
+        
+        <div class="carousel-controls">
+            <span class="prev"></span>
+            <span class="next"></span>
+        </div>
+        
+        <div class="carousel-indicators"></div>
+    </div> 
+    
+</div>
+
+    <!-- footer --> 
+    <footer>
+        <div class="footer-navlink-and-rating">
+            <div class="footer-navlink">
+                <div class="nav-link-active" onclick="location.replace('index.html')"> Home <div class="nav-link-active-underline">  </div> </div>
+                <div class="nav-link" onclick="location.replace('legends.html')"> Legends  <div class="nav-link-active-underline">  </div> </div>
+                <div class="nav-link" onclick="location.replace('maps.html')"> Maps <div class="nav-link-active-underline">  </div> </div>
+                <div class="nav-link" onclick="location.replace('about-us.html')"> About Us <div class="nav-link-active-underline">  </div> </div>
+                <div class="nav-link" onclick="location.replace('pbe-signup.html')"> PBE Signup <div class="nav-link-active-underline">  </div> </div>
+            </div>
+            
+            <div class="footer-rating">
+                <img src="assets/Icons/footer-age-restriction.png" style="max-width: 25vw;" alt="">
+            </div>
+            
+        </div>
+        
+        <div class="footer-logo-copyright-and-social-medias">
+            <div class="footer-logo-and-copyright">
+                <img src="assets/Logo/ADEX_LEGENDS_WHITE.svg" alt="">
+                <div style="display: flex; flex-direction: column; gap: 7.5px; line-height: 150%;">
+                    <p>ADEX LEGENDS website was designed & developed by Kevin Gunawan & Kelvin Giovanno. </p>
+                    <p> © 2022 Bebek Mandi, Inc.</p>
+                </div>
+                
+            </div>
+            
+            <div class="footer-social-medias">
+                <div class="footer-social-medias-container">
+                    
+                    <svg onclick="window.open('https://video.twimg.com/tweet_video/FPAQ_V2XIAAlEWO.mp4')" class="footer-social-medias-icon" width="clamp(36px, 2vw, 50px)" viewBox="0 0 46 38" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_332_17470)">
+                            <path  d="M14.2224 37.3401C17.6977 37.3656 21.1433 36.6927 24.3589 35.3606C27.5745 34.0284 30.496 32.0635 32.9534 29.5801C35.4109 27.0967 37.3553 24.1444 38.6735 20.8948C39.9918 17.6453 40.6577 14.1633 40.6324 10.6513V9.44446C42.4569 8.12257 44.0294 6.47769 45.2738 4.58946C43.5499 5.36088 41.7191 5.86042 39.8453 6.07065C41.7858 4.89915 43.2416 3.05782 43.9438 0.886505C42.1128 1.95699 40.1244 2.72552 38.0538 3.16314C36.6583 1.65373 34.8088 0.652 32.7924 0.313411C30.7759 -0.0251789 28.7052 0.318304 26.9017 1.29056C25.0981 2.26281 23.6626 3.80946 22.8178 5.69049C21.973 7.57152 21.7662 9.68173 22.2295 11.6937C18.5593 11.503 14.9701 10.5323 11.6962 8.84499C8.42236 7.15768 5.53736 4.79167 3.22954 1.90139C2.03972 3.96338 1.68014 6.40878 2.22525 8.73129C2.75441 11.0625 4.14229 13.1025 6.10668 14.4366C4.63271 14.3788 3.19229 13.975 1.89954 13.2571C1.89029 15.4232 2.62748 17.525 3.98456 19.2018C5.34163 20.8785 7.23395 22.0255 9.33668 22.446C7.9751 22.8294 6.54366 22.8857 5.15668 22.6105C5.74239 24.4735 6.89094 26.1042 8.44097 27.2735C10.0155 28.4487 11.9125 29.1004 13.8695 29.1387C10.5824 31.7523 6.51634 33.1638 2.33383 33.1434C1.59863 33.1524 0.863779 33.1065 0.135254 33.0063C4.37347 35.7719 9.31311 37.2389 14.3581 37.2304"/>
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_332_17470">
+                                <rect width="45.2472" height="37.1393" transform="translate(0 0.200195)"/>
+                            </clipPath>
+                        </defs>
+                    </svg>
+                    
+                    <svg onclick="window.open('https://youtu.be/dQw4w9WgXcQ')" class="footer-social-medias-icon" width="clamp(36px, 2vw, 50px)" viewBox="0 0 61 43" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_332_17472)">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M57.5087 3.92757C56.5826 2.99166 55.4291 2.31843 54.1641 1.97546C46.4021 0.995181 38.5833 0.546795 30.7614 0.633379C22.9414 0.537498 15.1236 0.961594 7.35866 1.90292C6.09424 2.25896 4.94309 2.94098 4.01809 3.88209C3.0931 4.82321 2.42603 5.9911 2.08228 7.27126C0.463458 16.8748 0.463458 26.6858 2.08228 36.2893C2.42384 37.5627 3.09137 38.7226 4.01766 39.6523C4.94395 40.582 6.0963 41.2486 7.35866 41.5851C15.1216 42.5516 22.9403 42.9879 30.7614 42.8909C38.5803 42.9841 46.3972 42.5721 54.1641 41.6576C55.4259 41.3081 56.5759 40.6326 57.501 39.6977C58.4261 38.7628 59.0945 37.6007 59.4405 36.3256C60.2802 31.5364 60.6887 26.6802 60.6609 21.8166C60.7248 16.9515 60.316 12.0919 59.4405 7.30753C59.1011 6.02915 58.4349 4.86349 57.5087 3.92757ZM25.4397 13.5027L39.454 22L25.8758 30.2329L24.6107 31V13L25.4397 13.5027Z"/>
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_332_17472">
+                                <rect width="59.8349" height="42.3301" transform="translate(0.861328 0.669922)"/>
+                            </clipPath>
+                        </defs>
+                    </svg>
+                    
+                    <svg onclick="window.open('https://www.instagram.com/p/CO0l02xlrsD/')" class="footer-social-medias-icon" width="clamp(36px, 2vw, 50px)" viewBox="0 0 44 43" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_332_17466)">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M22.0818 10.6373C19.9114 10.6309 17.7879 11.275 15.9798 12.4882C14.1717 13.7014 12.7602 15.4292 11.9238 17.4531C11.0874 19.477 10.8636 21.706 11.2808 23.8584C11.6981 26.0108 12.7375 27.9898 14.2677 29.5452C15.7979 31.1006 17.7502 32.1626 19.8776 32.5967C22.005 33.0309 24.2121 32.8178 26.2197 31.9844C28.2273 31.1509 29.9452 29.7346 31.1563 27.9145C32.3673 26.0945 33.0171 23.9523 33.0234 21.7591C33.0277 20.3028 32.748 18.8599 32.2004 17.5128C31.6528 16.1658 30.848 14.9409 29.832 13.9081C28.8159 12.8754 27.6086 12.055 26.2788 11.4937C24.949 10.9325 23.5229 10.6415 22.0818 10.6373ZM22.0818 28.9042C20.677 28.9042 19.3039 28.4832 18.1359 27.6946C16.9679 26.9059 16.0575 25.7849 15.5199 24.4734C14.9824 23.1619 14.8417 21.7188 15.1158 20.3265C15.3898 18.9342 16.0663 17.6553 17.0596 16.6515C18.0529 15.6477 19.3184 14.9641 20.6962 14.6872C22.0739 14.4103 23.502 14.5524 24.7998 15.0956C26.0976 15.6389 27.2069 16.5588 27.9873 17.7392C28.7677 18.9195 29.1843 20.3072 29.1843 21.7267C29.1885 22.6705 29.0077 23.6057 28.6522 24.4785C28.2968 25.3512 27.7738 26.1441 27.1134 26.8115C26.4531 27.4788 25.6684 28.0074 24.8048 28.3665C23.9412 28.7257 23.0157 28.9084 22.0818 28.9042Z"/>
+                            <path d="M35.9343 10.1197C35.9343 10.6312 35.7842 11.1313 35.503 11.5566C35.2218 11.982 34.822 12.3135 34.3543 12.5093C33.8867 12.705 33.372 12.7562 32.8756 12.6564C32.3791 12.5566 31.923 12.3103 31.5651 11.9486C31.2071 11.5869 30.9634 11.126 30.8646 10.6243C30.7659 10.1225 30.8165 9.60249 31.0103 9.12987C31.204 8.65726 31.532 8.25331 31.9529 7.9691C32.3738 7.6849 32.8687 7.5332 33.3749 7.5332C34.0537 7.5332 34.7047 7.80571 35.1847 8.29076C35.6647 8.77582 35.9343 9.4337 35.9343 10.1197Z"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M22.0807 0.161605H13.2825C11.5119 0.203439 9.76046 0.542132 8.09964 1.16386C6.67903 1.71027 5.39146 2.55932 4.32445 3.65333C3.24186 4.73161 2.40167 6.03276 1.86097 7.46837C1.21772 9.14394 0.839828 10.9115 0.741211 12.706V30.4879C0.836067 32.2829 1.21408 34.0511 1.86097 35.7255C2.40119 37.1708 3.24114 38.4827 4.32445 39.5729C5.40121 40.6469 6.68667 41.4835 8.09964 42.03C9.75622 42.667 11.5103 43.0062 13.2825 43.0323H30.8788C32.6098 42.981 34.3194 42.6311 35.9337 41.9977C37.359 41.476 38.6494 40.6361 39.7089 39.5405C40.8461 38.4756 41.7412 37.174 42.3323 35.7255C42.9441 34.0574 43.2792 32.2987 43.3241 30.5202V12.706C43.2827 10.9167 42.9476 9.14671 42.3323 7.46837C41.7767 5.99591 40.9194 4.65871 39.8167 3.54438C38.714 2.43005 37.3908 1.56374 35.9337 1.00221C34.2535 0.431986 32.4912 0.147916 30.7188 0.161605C27.8412 0.307835 24.9582 0.307835 22.0807 0.161605ZM22.0807 4.0413H30.6868C32.0411 4.06293 33.3821 4.31429 34.654 4.78491C35.5779 5.14378 36.417 5.69469 37.1169 6.402C37.8168 7.1093 38.362 7.95724 38.7171 8.89093C39.1859 10.1641 39.4347 11.5093 39.453 12.8676V30.2939C39.4316 31.6625 39.1828 33.0177 38.7171 34.303C38.362 35.2366 37.8168 36.0846 37.1169 36.7919C36.417 37.4992 35.5779 38.0501 34.654 38.409C33.3804 38.8692 32.0393 39.1096 30.6868 39.1203H13.5385C12.186 39.1096 10.8449 38.8692 9.57133 38.409C8.64739 38.0501 7.80831 37.4992 7.10839 36.7919C6.40847 36.0846 5.86331 35.2366 5.50819 34.303C5.04249 33.0177 4.79375 31.6625 4.77235 30.2939V12.8676C4.77003 11.513 4.99727 10.168 5.44421 8.89093C5.79933 7.95724 6.34449 7.1093 7.0444 6.402C7.74432 5.69469 8.5834 5.14378 9.50734 4.78491C10.7994 4.30712 12.1627 4.05564 13.5385 4.0413C15.714 4.07363 16.3859 4.0413 22.0807 4.0413Z"/>
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_332_17466">
+                                <rect width="42.4229" height="43" transform="translate(0.869141)"/>
+                            </clipPath>
+                        </defs>
+                    </svg>
+                    
+                    
+                    <svg onclick="window.open('https://www.facebook.com/MITCSAIL/videos/rick-roll/175310064147000/')" class="footer-social-medias-icon" width="clamp(36px, 2vw, 50px)" viewBox="0 0 47 46" xmlns="http://www.w3.org/2000/svg">
+                        <g  clip-path="url(#clip0_332_17464)">
+                            <path  d="M46.769 23.1223C46.7386 18.7335 45.4532 14.445 43.0645 10.7631C40.6758 7.08124 37.2835 4.15967 33.2881 2.34333C29.2927 0.526993 24.861 -0.108283 20.5163 0.512504C16.1715 1.13329 12.0951 2.98422 8.76824 5.84678C5.44137 8.70934 3.00299 12.464 1.74095 16.6675C0.47891 20.871 0.445909 25.3479 1.64584 29.5695C2.84578 33.7912 5.22855 37.5814 8.51285 40.4927C11.7971 43.404 15.8459 45.3148 20.181 45.9996V29.8383H14.3543V23.1223H20.181V18.1236C20.0172 16.9219 20.1244 15.6988 20.4949 14.5439C20.8653 13.3891 21.4895 12.3318 22.3217 11.4496C23.1539 10.5674 24.1731 9.88262 25.3044 9.44553C26.4357 9.00844 27.6505 8.8301 28.8596 8.92359C30.5849 8.94665 32.3064 9.09011 34.0116 9.35292V15.0569H31.129C30.6312 14.9903 30.1248 15.0367 29.6474 15.1927C29.1701 15.3487 28.734 15.6102 28.3716 15.9579C28.0092 16.3056 27.7298 16.7305 27.5541 17.201C27.3785 17.6715 27.3111 18.1755 27.357 18.6756V22.9996H33.7356L32.7236 29.7156H27.357V45.8769C32.7636 44.9979 37.6825 42.2281 41.2375 38.0609C44.7926 33.8937 46.7528 28.5998 46.769 23.1223Z"/>
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_332_17464">
+                                <rect width="46" height="46" fill="white" transform="translate(0.769531)"/>
+                            </clipPath>
+                        </defs>
+                    </svg>
+                    
+                    <svg onclick="window.open('https://discordgift.site/SN7FgZiJGY3TXdfc')" class="footer-social-medias-icon" width="clamp(36px, 2vw, 50px)" viewBox="0 0 47 53" xmlns="http://www.w3.org/2000/svg" style="width: clamp(36px, 2vw, 50px); padding-top: 5px;">
+                        <g clip-path="url(#clip0_332_17462)">
+                            <path  d="M41.6777 0.0351824H6.19161C5.47665 0.0351677 4.76875 0.176554 4.10865 0.451205C3.44855 0.725855 2.84929 1.12834 2.34536 1.63551C1.84143 2.14267 1.44277 2.74449 1.17235 3.40633C0.90192 4.06817 0.76506 4.77696 0.769643 5.4919V41.256C0.769643 42.694 1.34088 44.0731 2.3577 45.0899C3.37452 46.1067 4.75361 46.678 6.19161 46.678H36.221L34.8307 41.8121L38.3063 44.9402L41.5039 47.8945L47.2039 52.9341V5.45715C47.204 4.73627 47.0604 4.02259 46.7814 3.35788C46.5025 2.69317 46.0937 2.09076 45.5792 1.5859C45.0646 1.08104 44.4545 0.683854 43.7846 0.417589C43.1147 0.151323 42.3984 0.0213193 41.6777 0.0351824ZM31.4594 34.5828C31.4594 34.5828 30.4862 33.4359 29.7215 32.428C31.6267 31.9764 33.3122 30.8691 34.4831 29.2999C33.5306 29.9219 32.5175 30.446 31.4594 30.8639C30.2214 31.3846 28.9265 31.7579 27.6014 31.9761C25.3044 32.4073 22.9472 32.4073 20.6502 31.9761C19.3238 31.6994 18.022 31.3158 16.7575 30.8292C16.0864 30.5785 15.4357 30.2764 14.8111 29.9255H14.6026L13.8727 29.4737C15.0067 31.0183 16.6398 32.1234 18.4953 32.6017C17.7307 33.6097 16.7227 34.7914 16.7227 34.7914C15.1507 34.8346 13.5924 34.4892 12.1858 33.7859C10.7792 33.0826 9.56794 32.0432 8.6593 30.7597C8.74451 25.4031 10.0522 20.1369 12.4825 15.3627C14.6156 13.6908 17.2136 12.7196 19.9203 12.5822L20.1636 12.895C17.6203 13.5315 15.2475 14.7179 13.2124 16.3706L14.7764 15.606C16.6777 14.7295 18.7081 14.1662 20.7892 13.9377H21.241C23.0191 13.7291 24.8154 13.7291 26.5935 13.9377C29.3905 14.2379 32.0979 15.1009 34.5527 16.4749C32.623 14.8608 30.3719 13.676 27.949 12.9992L28.3313 12.5822C31.038 12.7196 33.636 13.6908 35.7691 15.3627C38.1994 20.1369 39.5071 25.4031 39.5923 30.7597C38.6739 32.0415 37.4558 33.079 36.0442 33.7818C34.6326 34.4846 33.0705 34.8312 31.4941 34.7914L31.4594 34.5828ZM19.1557 22.2444C18.5703 22.1954 17.9839 22.3242 17.4729 22.6138C16.9619 22.9034 16.5501 23.3404 16.2914 23.8678C16.0326 24.3951 15.939 24.9882 16.0226 25.5695C16.1063 26.1509 16.3634 26.6936 16.7603 27.1265C17.1572 27.5595 17.6754 27.8627 18.2474 27.9965C18.8193 28.1303 19.4183 28.0885 19.9661 27.8765C20.5138 27.6645 20.9849 27.2922 21.3178 26.8083C21.6507 26.3244 21.8298 25.7513 21.8319 25.1639C21.8602 24.4229 21.5951 23.7006 21.094 23.154C20.5929 22.6073 19.8963 22.2805 19.1557 22.2444ZM28.8179 22.2444C28.2326 22.1954 27.6461 22.3242 27.1351 22.6138C26.6241 22.9034 26.2123 23.3404 25.9536 23.8678C25.6949 24.3951 25.6012 24.9882 25.6849 25.5695C25.7685 26.1509 26.0256 26.6936 26.4225 27.1265C26.8194 27.5595 27.3376 27.8627 27.9096 27.9965C28.4815 28.1303 29.0805 28.0885 29.6283 27.8765C30.1761 27.6645 30.6472 27.2922 30.98 26.8083C31.3129 26.3244 31.4921 25.7513 31.4941 25.1639C31.5128 24.7941 31.4584 24.4242 31.334 24.0755C31.2095 23.7267 31.0175 23.406 30.7689 23.1315C30.5203 22.8571 30.22 22.6344 29.8852 22.4762C29.5504 22.318 29.1877 22.2274 28.8179 22.2096V22.2444Z"/>
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_332_17462">
+                                <rect width="46.33" height="52.8642" fill="red" transform="translate(0.769531)"/>
+                            </clipPath>
+                        </defs>
+                    </svg>
+                    
+                </div>
+            </div>
+        </div>
+    </footer>
+
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="script.js"></script>
+
+<script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 5,
+      centeredSlides: true,
+      spaceBetween: 0,
+      grabCursor: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+</script>
+
+</body>
+</html>
